@@ -23,10 +23,6 @@ class Car:
     def drive(self, hours):
         self.travelled_distance += int(hours * self.current_speed)
 
-    # Add this method to print cars nicely
-    def __str__(self):
-        return f"{self.license_plate} | Speed: {self.current_speed} km/h | Distance: {self.travelled_distance} km"
-
 # Cars list
 cars = [
     Car("ABC - 123", 200),
@@ -47,9 +43,4 @@ def race(cars):
             if car.travelled_distance >= 10000:
                 race_finished = True
     return cars
-
-race(cars)
-
-for car in cars:
-    print(car)
 
