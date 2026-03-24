@@ -27,7 +27,7 @@ class Elevator:
 h = Elevator(1, 10)
 
 h.go_to_floor(5)
-print(f"Current Floor: {h.current_floor}") # Should be 5
+print(f"Current Floor: {h.current_floor}")
 
 h.go_to_floor(1)
-print(f"Current Floor: {h.current_floor}") # Should be 1
+print(f"Current Floor: {h.current_floor}")
