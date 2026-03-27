@@ -2,6 +2,7 @@ class Publication:
     def __init__(self, name):
         self.name = name
 
+
 class Book(Publication):
     def __init__(self, name, author, page_count):
         self.author = author
@@ -10,6 +11,7 @@ class Book(Publication):
 
     def print_information(self):
         print(self.name, self.author, self.page_count)
+
 
 class Magazine(Publication):
     def __init__(self, name, chief_editor):
