@@ -23,14 +23,12 @@ class Car:
 
 
 class ElectricCar(Car):
-
     def __init__(self, license_plate, maximum_speed, battery_capacity):
         self.battery_capacity = battery_capacity
         super().__init__(license_plate, maximum_speed)
 
 
 class GasolineCar(Car):
-
     def __init__(self, license_plate, maximum_speed, tank_volume):
         self.tank_volume = tank_volume
         super().__init__(license_plate, maximum_speed)
