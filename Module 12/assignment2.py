@@ -12,7 +12,7 @@ try:
 
     if response.status_code == 200:
         print(f"Weather: {converted_response["weather"][0]["description"]}")
-        print(f"Weather: {converted_response["main"]["temp"]}")
+        print(f"Temperature: {converted_response["main"]["temp"]}")
     else:
         print(f"Error: {response.status_code}")
 
